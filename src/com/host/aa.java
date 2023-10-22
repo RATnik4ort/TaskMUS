@@ -3,7 +3,8 @@ package com.host;
 import java.util.*;
 
 public class aa {
-    private byte num = 0;
+    private int a = 4;
+    private int num = 0;
     public aa() {
         String[][] d = new String[12][20];
         for (int i = 0; i < d.length; i++) {
@@ -24,13 +25,12 @@ public class aa {
         int[] d = new int[12];
         float[] x = new float[20];
         Random r = new Random();
-        double X;
-        int a = 4;
+        double X;  
         float x2 = 0;
         for (int i = 0; i < d.length; i++) {
             for (int j = 0; j < x.length; j++) {
-                d[i] = a;
-                a++;
+                d[i] = this.a;
+                this.a++;
                 X = x[j] = r.nextFloat(-7, 12);
                 if (d[i] == 13) {                    
                     x2 = (float)(Math.pow((Math.asin(1/4*((X+2.5)/19))/2), 3));
